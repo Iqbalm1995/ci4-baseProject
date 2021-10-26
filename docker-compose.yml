@@ -1,0 +1,12 @@
+version: "3"
+services: 
+  baymaks-app:
+    build: .
+    ports: 
+    - 82:80
+    volumes:
+    - ./:/var/www/html
+    - vendor:/var/www/html/vendor 
+
+volumes: 
+  vendor: 
